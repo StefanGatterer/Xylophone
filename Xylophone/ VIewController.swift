@@ -33,10 +33,7 @@ class ViewController: UIViewController{
             print(error)
         }
         
-        
     }
-    
-    
-    
+
 }
 
