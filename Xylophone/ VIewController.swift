@@ -21,9 +21,9 @@ class ViewController: UIViewController{
     
     @IBAction func notePressed(_ sender: UIButton) {
         
+        print("Taste \(sender.tag) gedrückt")
         
-        
-        let path = Bundle.main.path(forResource: "note1", ofType: "wav")
+        let path = Bundle.main.path(forResource: "note\(sender.tag)", ofType: "wav")
         let url = URL(fileURLWithPath: path!)
         
         do{
